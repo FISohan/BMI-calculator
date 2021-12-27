@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="header">Body Mass Index (BMI) Calculator</h1>
+    </header>
+    <section class="sec_1">
+      <h1 class="sec_header">How to calculate Body Mass Index</h1>
+      <br />
+      <p class="sec_1_paragraph">
+        Body Mass Index is a simple calculation using a person’s height and
+        weight. The formula is BMI = kg/m2 where kg is a person’s weight in
+        kilograms and m2 is their height in metres squared.
+        <br />
+        A BMI of 25.0 or more is overweight, while the healthy range is 18.5 to
+        24.9. BMI applies to most adults 18-65 years.
+      </p>
+    </section>
+
+    <section class="sec_1">
+      <h1 class="sec_header">Who shouldn't use a BMI calculator</h1>
+      <br />
+      <p class="sec_1_paragraph">
+        BMI is not used for muscle builders, long distance athletes, pregnant
+        women, the elderly or young children. This is because BMI does not take
+        into account whether the weight is carried as muscle or fat, just the
+        number. Those with a higher muscle mass, such as athletes, may have a
+        high BMI but not be at greater health risk. Those with a lower muscle
+        mass, such as children who have not completed their growth or the
+        elderly who may be losing some muscle mass may have a lower BMI. During
+        pregnancy and lactation, a woman's body composition changes, so using
+        BMI is not appropriate.
+      </p>
+    </section>
+
+    <section>
+      <h1 class="sec_header">Calculate your Body Mass Index</h1>
+      <br />
+      <div class="calc_body">
+        <br />
+        <h2 style="color: rgb(255, 102, 0)">
+          Your BMI:<span id="bmi">*__*</span>
+        </h2>
+        <br />
+        <label>Height:</label>
+        <div style="display: none" id="cm_input_box">
+          <input type="number" id="heightC" />
+        </div>
+        <div id="feet_input_box" style="display: inline">
+          <input type="number" id="heightF" />
+          <select id="inch">
+            <option value="0">0"</option>
+            <option value="1">1"</option>
+            <option value="2">2"</option>
+            <option value="3">3"</option>
+            <option value="4">4"</option>
+            <option value="5">5"</option>
+            <option value="6">6"</option>
+            <option value="7">7"</option>
+            <option value="8">8"</option>
+            <option value="9">9"</option>
+            <option value="10">10"</option>
+            <option value="11">11"</option>
+          </select>
+        </div>
+
+        <select id="heightUnit">
+          <option value="F">Feet</option>
+          <option value="C">CM</option>
+        </select>
+
+        <br />
+        <label>Weight:</label>
+        <input type="number" id="weight" />
+        <select id="weight_unit">
+          <option value="K">KG</option>
+          <option value="P">Pound</option>
+        </select>
+        <br />
+
+        <button
+          onclick="calculate_bmi()"
+          style="
+            width: 45%;
+            height: 40px;
+            margin-top: 5px;
+            background-color: rgb(250, 94, 21);
+            border: none;
+          "
+        >
+          Calculate
+        </button>
+        <div class="indicator" id="indicator">
+          <div class="i1 i"><18.5 skinny</div>
+
+          <div class="i2 i">
+            18.5—24.9
+            <br />
+            Healthy
+          </div>
+
+          <div class="i3 i">
+            25.0—29.9
+            <br />
+            weighty
+          </div>
+
+          <div class="i4 i">
+            30.0<
+            <br />
+            Obese
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <script src="app.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  background: linear-gradient(0deg, #0e6ca2, #1e3268);
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+}
+
+.header {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  color: whitesmoke;
+  text-shadow: 0 0 1em transparent, 0.125rem 0.125rem 0.5rem, #1e3268;
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 28px;
+  color: gray;
+}
+
+.sec_header {
+  font-size: 2rem;
+}
+
+section {
+  padding: 20px 15% 0px;
+  color: #1e3268;
+}
+
+.calc_body {
+  width: 100%;
+  outline: 1px rgb(189, 183, 183) solid;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+input {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  width: 25%;
+  text-align: center;
+  font-size: 1rem;
+}
+
+select {
+  width: 25%;
+  height: 40px;
+  font-size: 0.8rem;
+}
+
+.indicator {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.i {
+  padding-top: 3%;
+  background-color: green;
+  text-align: center;
+  width: 24%;
+  box-shadow: 1px 2px 35px rgb(180, 176, 176);
+}
+
+.i1 {
+  background-color: lightseagreen;
+}
+
+.i2 {
+  background-color: rgb(37, 175, 122);
+}
+
+.i3 {
+  background-color: rgb(236, 222, 22);
+}
+
+.i4 {
+  background-color: rgb(255, 146, 22);
+}
+.i5 {
+  background-color: rgb(233, 22, 22);
+}
